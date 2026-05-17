@@ -215,15 +215,6 @@
 
   countEls.forEach(el => countObserver.observe(el));
 
-  // ---------- Offerte knoppen — scroll naar formulier zonder hash in URL ----------
-  document.querySelectorAll('a[href="#contactForm"]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const target = document.getElementById('contactForm');
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-
   // ---------- Dienst modal ----------
   const svcBackdrop = document.getElementById('svcModalBackdrop');
   const svcClose = document.getElementById('svcModalClose');
