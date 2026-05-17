@@ -3,6 +3,18 @@
 (() => {
   'use strict';
 
+  // ---------- Smooth scroll zonder hash in URL ----------
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const id = link.getAttribute('href').slice(1);
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
   // ---------- Sticky nav shadow on scroll ----------
   const nav = document.getElementById('nav');
   const onScroll = () => {
