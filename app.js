@@ -102,16 +102,37 @@
         return;
       }
 
-      // Simulated success
-      const btn = form.querySelector('button[type="submit"] .btn__label');
-      if (btn) btn.textContent = 'Bedankt!';
-      success.classList.add('is-visible');
-      form.querySelectorAll('input, textarea, select').forEach(el => { el.value = ''; el.disabled = true; });
-      setTimeout(() => {
-        success.classList.remove('is-visible');
-        form.querySelectorAll('input, textarea, select').forEach(el => el.disabled = false);
-        if (btn) btn.textContent = 'Offerte aanvragen';
-      }, 6000);
+      // Submit to Formspree
+      const btn = form.querySelector('button[type="submit"]');
+      const btnLabel = form.querySelector('button[type="submit"] .btn__label');
+      if (btn) btn.disabled = true;
+      if (btnLabel) btnLabel.textContent = 'Versturen…';
+
+      const data = new FormData(form);
+      fetch('https://formspree.io/f/xdajoopd', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(res => {
+        if (res.ok) {
+          if (btnLabel) btnLabel.textContent = 'Bedankt!';
+          success.classList.add('is-visible');
+          form.querySelectorAll('input, textarea, select').forEach(el => { el.value = ''; });
+          setTimeout(() => {
+            success.classList.remove('is-visible');
+            if (btn) btn.disabled = false;
+            if (btnLabel) btnLabel.textContent = 'Offerte aanvragen';
+          }, 6000);
+        } else {
+          if (btnLabel) btnLabel.textContent = 'Fout — probeer opnieuw';
+          if (btn) btn.disabled = false;
+        }
+      })
+      .catch(() => {
+        if (btnLabel) btnLabel.textContent = 'Fout — probeer opnieuw';
+        if (btn) btn.disabled = false;
+      });
     });
   }
 
