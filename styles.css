@@ -1055,6 +1055,40 @@ a.contact__val:hover { color: var(--red); }
 }
 .footer__legal a:hover { color: #fff; }
 
+/* ---------- DIENST MODAL ---------- */
+
+.svc-modal {
+  grid-template-columns: 1fr;
+  max-width: 520px;
+  padding: 0;
+}
+.svc-modal__icon {
+  background: var(--bg-alt);
+  padding: 36px 40px 28px;
+  border-bottom: 1px solid var(--line);
+  color: var(--red);
+}
+.svc-modal__icon svg {
+  width: 52px;
+  height: 52px;
+}
+.svc-modal .modal__body {
+  padding: clamp(24px, 4vw, 40px);
+  gap: 20px;
+}
+.svc-modal .modal__title {
+  font-size: 26px;
+}
+.svc-modal .modal__desc {
+  font-size: 15px;
+  line-height: 1.75;
+}
+.svc-modal .modal__cta {
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
 /* ---------- PROJECT MODAL ---------- */
 
 .modal-backdrop {

@@ -215,6 +215,35 @@
 
   countEls.forEach(el => countObserver.observe(el));
 
+  // ---------- Dienst modal ----------
+  const svcBackdrop = document.getElementById('svcModalBackdrop');
+  const svcClose = document.getElementById('svcModalClose');
+  const svcCta = document.getElementById('svcModalCta');
+
+  const openSvcModal = (card) => {
+    document.getElementById('svcModalTitle').textContent = card.dataset.svcTitle;
+    document.getElementById('svcModalBody').textContent = card.dataset.svcBody;
+    // Copy the icon SVG from the card
+    const iconSrc = card.querySelector('.svc__icon').innerHTML;
+    document.getElementById('svcModalIcon').innerHTML = iconSrc;
+    svcBackdrop.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeSvcModal = () => {
+    svcBackdrop.classList.remove('is-open');
+    document.body.style.overflow = '';
+  };
+
+  document.querySelectorAll('.svc').forEach(card => {
+    card.addEventListener('click', () => openSvcModal(card));
+  });
+
+  svcClose.addEventListener('click', closeSvcModal);
+  svcBackdrop.addEventListener('click', (e) => { if (e.target === svcBackdrop) closeSvcModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSvcModal(); });
+  svcCta.addEventListener('click', closeSvcModal);
+
   // ---------- Project modal ----------
   const backdrop = document.getElementById('modalBackdrop');
   const modalClose = document.getElementById('modalClose');

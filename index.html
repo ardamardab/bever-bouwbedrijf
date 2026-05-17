@@ -117,7 +117,8 @@
 
     <div class="services__grid">
       <!-- Nieuwbouw -->
-      <article class="svc reveal">
+      <article class="svc reveal" data-svc-title="Nieuwbouw"
+        data-svc-body="Bever Bouwbedrijf begeleidt u van het eerste idee tot de sleuteloverdracht. Wij verzorgen de volledige realisatie van uw nieuwbouwwoning: van grondwerk, fundering en constructie tot de complete afbouw en installaties. Gasloos bouwen, duurzame materialen en moderne bouwtechnieken zijn voor ons vanzelfsprekend. U heeft één vast aanspreekpunt en een transparante planning — geen verrassingen.">
         <div class="svc__icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M8 22L24 10l16 12"/>
@@ -132,7 +133,8 @@
       </article>
 
       <!-- Renovatie -->
-      <article class="svc reveal">
+      <article class="svc reveal" data-svc-title="Renovatie"
+        data-svc-body="Een renovatie vraagt om vakmanschap én respect voor het bestaande. Wij verbouwen woningen van elke leeftijd — van jaren-30 herenhuizen tot naoorlogse rijtjeswoningen. Onze aanpak: grondige inspectie, helder plan, strakke uitvoering. Wij ontzorgen u volledig: sloopwerk, constructie, installaties, afbouw. Het resultaat is een woning die aanvoelt als nieuw, maar haar karakter behoudt.">
         <div class="svc__icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M30 8l10 10-22 22H8V28z"/>
@@ -146,7 +148,8 @@
       </article>
 
       <!-- Aanbouw -->
-      <article class="svc reveal">
+      <article class="svc reveal" data-svc-title="Aanbouw"
+        data-svc-body="Meer woonruimte zonder te verhuizen — dat is wat een aanbouw u oplevert. Wij realiseren uitbouwen aan de zij- of achterkant van uw woning: van een ruime woonkeuken tot een extra slaapkamer of kantoor. Wij regelen de vergunningsaanvraag, het constructieontwerp en de volledige uitvoering. De aanbouw wordt naadloos afgestemd op de stijl en bouwwijze van uw bestaande woning.">
         <div class="svc__icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M6 24L18 14l12 10"/>
@@ -161,7 +164,8 @@
       </article>
 
       <!-- Opbouw -->
-      <article class="svc reveal">
+      <article class="svc reveal" data-svc-title="Opbouw"
+        data-svc-body="Heeft u een plat dak of een bungalow en wilt u een extra verdieping? Een opbouw is een slimme manier om uw woning te vergroten zonder kostbaar grondoppervlak te gebruiken. Wij verzorgen het complete traject: constructieberekeningen, vergunning, prefab of traditionele bouw, isolatie en afbouw. Snel, netjes en met minimale overlast voor u en uw buren.">
         <div class="svc__icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M8 26L24 14l16 12"/>
@@ -176,7 +180,8 @@
       </article>
 
       <!-- Sanitair -->
-      <article class="svc reveal">
+      <article class="svc reveal" data-svc-title="Sanitair"
+        data-svc-body="Van een complete badkamerrenovatie tot het vervangen van uw toilet of douche — onze eigen sanitair-vaklieden leveren strak en vakkundig werk. Wij verzorgen het volledige traject: demontage, loodgieterwerk, tegelwerk, sanitair plaatsen en afwerking. U kiest het ontwerp, wij regelen de rest. Modern, duurzaam en uitgevoerd met materialen van hoge kwaliteit.">
         <div class="svc__icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M10 26h28v8a8 8 0 01-8 8H18a8 8 0 01-8-8v-8z"/>
@@ -191,7 +196,8 @@
       </article>
 
       <!-- Totaal Afbouw -->
-      <article class="svc reveal">
+      <article class="svc reveal" data-svc-title="Totaal Afbouw"
+        data-svc-body="De afbouw bepaalt de uitstraling van uw woning. Wij verzorgen de complete binnenafwerking: stucwerk, gipsplaten, schilderwerk, vloerleggen, plinten, deuren en maatwerkkozijnen. Of het nu gaat om één kamer of een volledig nieuwbouwproject — wij leveren altijd een strak en verzorgd eindresultaat. Eigen vaklieden, geen uitbesteding, directe controle op kwaliteit.">
         <div class="svc__icon">
           <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M6 30L26 10l12 12L18 42z"/>
@@ -655,6 +661,21 @@
     </div>
   </div>
 </footer>
+
+<!-- ============ DIENST MODAL ============ -->
+<div class="modal-backdrop" id="svcModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="svcModalTitle">
+  <div class="modal svc-modal">
+    <button class="modal__close" id="svcModalClose" aria-label="Sluiten">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 2l14 14M16 2L2 16"/></svg>
+    </button>
+    <div class="svc-modal__icon" id="svcModalIcon"></div>
+    <div class="modal__body">
+      <h3 class="modal__title" id="svcModalTitle"></h3>
+      <p class="modal__desc" id="svcModalBody"></p>
+      <a href="#contact" class="btn btn--primary modal__cta" id="svcModalCta">Vraag vrijblijvende offerte aan</a>
+    </div>
+  </div>
+</div>
 
 <!-- ============ PROJECT MODAL ============ -->
 <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
