@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Read(//c/Users/m_ard/.claude/projects/C--Users-m-ard-Downloads-BeverBouw/6dbaf2e0-a327-455e-8254-51de607cf65c/tool-results/**)",
+      "Bash(cp webfetch-1779033592075-1qs9z7.bin design.tar.gz)",
+      "Bash(tar -xzf design.tar.gz)",
+      "Bash(gunzip -c webfetch-1779033592075-1qs9z7.bin)",
+      "Bash(python -m http.server 8080)",
+      "Bash(npx --yes serve -l 8080)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Bash(where node:*)",
+      "Bash(where php:*)",
+      "Bash(python3 -m http.server 8080)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)",
+      "Bash(git --version)",
+      "Bash(gh --version)"
+    ]
+  }
+}

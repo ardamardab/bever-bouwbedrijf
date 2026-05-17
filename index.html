@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bever Bouwbedrijf B.V. — Bouwen met vakmanschap</title>
+<meta name="description" content="Bever Bouwbedrijf B.V. — Uw betrouwbare partner voor nieuwbouw, renovatie, aanbouw, opbouw, sanitair en totaal afbouw.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav" data-screen-label="Navbar">
+  <div class="nav__inner container">
+    <a href="#top" class="nav__logo" aria-label="Bever Bouwbedrijf B.V.">
+      <img src="assets/logo.png" alt="Bever Bouwbedrijf B.V." width="260">
+    </a>
+    <nav class="nav__links" aria-label="Hoofdnavigatie">
+      <a href="#diensten">Diensten</a>
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#projecten">Projecten</a>
+      <a href="#over">Over ons</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--primary nav__cta">Offerte aanvragen</a>
+    <button class="nav__burger" id="burger" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#diensten">Diensten</a>
+    <a href="#werkwijze">Werkwijze</a>
+    <a href="#projecten">Projecten</a>
+    <a href="#over">Over ons</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn--primary">Offerte aanvragen</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" data-screen-label="Hero">
+  <div class="hero__bg">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=85"
+         alt="Moderne woning" class="hero__bg-img">
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__inner container">
+    <div class="hero__copy reveal">
+      <div class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>BEVER BOUWBEDRIJF B.V.</div>
+      <h1 class="hero__title">
+        Bouwen met<br><span class="text-red">vakmanschap</span>
+      </h1>
+      <p class="hero__sub">
+        Uw betrouwbare partner voor nieuwbouw, renovatie, aanbouw,
+        opbouw, sanitair en totaal afbouw.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">Vrijblijvende offerte</a>
+        <a href="#projecten" class="btn btn--outline-light btn--lg">
+          Bekijk projecten
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__meta reveal">
+      <div class="hero__meta-item">
+        <div class="hero__meta-num count-up" data-count="25" data-suffix="+">0+</div>
+        <div class="hero__meta-lbl">Jaar ervaring</div>
+      </div>
+      <div class="hero__meta-sep"></div>
+      <div class="hero__meta-item">
+        <div class="hero__meta-num count-up" data-count="350" data-suffix="+">0+</div>
+        <div class="hero__meta-lbl">Afgeronde projecten</div>
+      </div>
+      <div class="hero__meta-sep"></div>
+      <div class="hero__meta-item">
+        <div class="hero__meta-num count-up" data-count="9.4" data-suffix="" data-decimals="1" data-decimal-sep=",">0,0</div>
+        <div class="hero__meta-lbl">Klantbeoordeling</div>
+      </div>
+      <div class="hero__meta-sep"></div>
+      <div class="hero__meta-item">
+        <div class="hero__meta-badge">
+          <span class="hero__meta-dot"></span>
+          <div>
+            <div class="hero__meta-num hero__meta-num--sm">Erkend &amp; verzekerd</div>
+            <div class="hero__meta-lbl">Bouwgarant aangesloten</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#diensten" class="hero__scroll" aria-label="Scroll naar diensten">
+    <span>Scroll</span>
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v10M3 8l4 4 4-4"/></svg>
+  </a>
+</section>
+
+<!-- ============ DIENSTEN ============ -->
+<section class="services section" id="diensten" data-screen-label="Diensten">
+  <div class="container">
+    <div class="section__head reveal">
+      <div class="eyebrow"><span class="eyebrow__line"></span>ONZE DIENSTEN</div>
+      <h2 class="section__title">Een vakman voor elk project</h2>
+      <p class="section__sub">
+        Van het eerste idee tot de laatste afwerking — wij begeleiden u in elk traject
+        met dezelfde aandacht voor detail en kwaliteit.
+      </p>
+    </div>
+
+    <div class="services__grid">
+      <!-- Nieuwbouw -->
+      <article class="svc reveal">
+        <div class="svc__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 22L24 10l16 12"/>
+            <path d="M11 20v18h26V20"/>
+            <path d="M20 38v-9h8v9"/>
+            <path d="M16 26h4M28 26h4"/>
+          </svg>
+        </div>
+        <h3 class="svc__title">Nieuwbouw</h3>
+        <p class="svc__desc">Van droom naar werkelijkheid. Wij realiseren uw woning van fundering tot oplevering.</p>
+        <span class="svc__more">Meer informatie <em>→</em></span>
+      </article>
+
+      <!-- Renovatie -->
+      <article class="svc reveal">
+        <div class="svc__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M30 8l10 10-22 22H8V28z"/>
+            <path d="M26 12l10 10"/>
+            <path d="M14 32l4 4"/>
+          </svg>
+        </div>
+        <h3 class="svc__title">Renovatie</h3>
+        <p class="svc__desc">Wij geven bestaande panden een nieuw leven met oog voor karakter en detail.</p>
+        <span class="svc__more">Meer informatie <em>→</em></span>
+      </article>
+
+      <!-- Aanbouw -->
+      <article class="svc reveal">
+        <div class="svc__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24L18 14l12 10"/>
+            <path d="M9 22v18h18V22"/>
+            <path d="M27 30h15v10H27z"/>
+            <path d="M16 40v-7h6v7"/>
+          </svg>
+        </div>
+        <h3 class="svc__title">Aanbouw</h3>
+        <p class="svc__desc">Meer ruimte, meer comfort. Wij realiseren aanbouwen die perfect passen bij uw huis.</p>
+        <span class="svc__more">Meer informatie <em>→</em></span>
+      </article>
+
+      <!-- Opbouw -->
+      <article class="svc reveal">
+        <div class="svc__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 26L24 14l16 12"/>
+            <path d="M11 24v16h26V24"/>
+            <path d="M18 14V8h12v6"/>
+            <path d="M22 40v-8h4v8"/>
+          </svg>
+        </div>
+        <h3 class="svc__title">Opbouw</h3>
+        <p class="svc__desc">Extra ruimte nodig? Met een opbouw creëren we mogelijkheden waar u ze niet verwacht.</p>
+        <span class="svc__more">Meer informatie <em>→</em></span>
+      </article>
+
+      <!-- Sanitair -->
+      <article class="svc reveal">
+        <div class="svc__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 26h28v8a8 8 0 01-8 8H18a8 8 0 01-8-8v-8z"/>
+            <path d="M14 26V12a4 4 0 014-4h2"/>
+            <path d="M18 12h6"/>
+            <path d="M16 42l-2 4M32 42l2 4"/>
+          </svg>
+        </div>
+        <h3 class="svc__title">Sanitair</h3>
+        <p class="svc__desc">Complete badkameroplossingen — modern, functioneel en uitgevoerd door eigen vaklieden.</p>
+        <span class="svc__more">Meer informatie <em>→</em></span>
+      </article>
+
+      <!-- Totaal Afbouw -->
+      <article class="svc reveal">
+        <div class="svc__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 30L26 10l12 12L18 42z"/>
+            <path d="M22 14l12 12"/>
+            <path d="M30 6l4 4-4 4-4-4z"/>
+          </svg>
+        </div>
+        <h3 class="svc__title">Totaal Afbouw</h3>
+        <p class="svc__desc">Van stucwerk tot schilderwerk — wij zorgen voor een perfecte, strakke afwerking.</p>
+        <span class="svc__more">Meer informatie <em>→</em></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WERKWIJZE ============ -->
+<section class="process section section--alt" id="werkwijze" data-screen-label="Werkwijze">
+  <div class="container process__inner">
+    <div class="process__copy reveal">
+      <div class="eyebrow"><span class="eyebrow__line"></span>ONZE WERKWIJZE</div>
+      <h2 class="section__title">Van idee tot resultaat</h2>
+      <p class="section__sub">
+        Wij werken gestructureerd en transparant. Zo weet u altijd waar u aan toe bent —
+        van eerste gesprek tot de sleuteloverdracht.
+      </p>
+
+      <ol class="steps" id="stepsLine">
+        <li class="step">
+          <span class="step__num">01</span>
+          <div>
+            <h4 class="step__t">Kennismaking</h4>
+            <p class="step__d">We luisteren naar uw wensen en brengen de mogelijkheden helder in kaart.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <div>
+            <h4 class="step__t">Plan van aanpak</h4>
+            <p class="step__d">Een heldere planning, transparante offerte en duidelijke afspraken — zwart op wit.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <div>
+            <h4 class="step__t">Vakkundige uitvoering</h4>
+            <p class="step__d">Ons team gaat aan de slag met oog voor detail, kwaliteit en strakke afwerking.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">04</span>
+          <div>
+            <h4 class="step__t">Oplevering</h4>
+            <p class="step__d">We leveren op tijd op, zorgen voor een perfect resultaat en blijven betrokken.</p>
+          </div>
+        </li>
+      </ol>
+
+      <a href="#contact" class="btn btn--primary">Plan een kennismaking</a>
+    </div>
+
+    <div class="process__visual reveal">
+      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=80"
+           alt="Modern interieur na renovatie" class="process__img">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTEN ============ -->
+<section class="projects section" id="projecten" data-screen-label="Projecten">
+  <div class="container">
+    <div class="section__head section__head--row reveal">
+      <div>
+        <div class="eyebrow"><span class="eyebrow__line"></span>RECENTE PROJECTEN</div>
+        <h2 class="section__title">Werk waar wij trots op zijn</h2>
+      </div>
+      <a href="#" class="link-arrow">Bekijk alle projecten
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+
+    <div class="proj-filters reveal">
+      <button class="chip is-active" data-filter="all">Alle</button>
+      <button class="chip" data-filter="nieuwbouw">Nieuwbouw</button>
+      <button class="chip" data-filter="renovatie">Renovatie</button>
+      <button class="chip" data-filter="aanbouw">Aanbouw</button>
+      <button class="chip" data-filter="sanitair">Sanitair</button>
+    </div>
+
+    <div class="proj-grid" id="projGrid">
+      <a class="proj proj--tall reveal" data-cat="nieuwbouw" href="#"
+         data-title="Nieuwbouw villa"
+         data-location="Heerenveen · 2025"
+         data-type="Nieuwbouw"
+         data-desc="Voor een jong gezin in Heerenveen realiseerden wij deze vrijstaande villa van circa 220 m². Het project omvatte alles van fundering tot sleuteloverdracht: constructie, isolatie, gevelbekleding, dak, complete afbouw en tuinaansluiting. De woning is gasloos uitgevoerd met vloerverwarming en een warmtepomp."
+         data-reviewer="Familie De Vries, Heerenveen"
+         data-review="Bever Bouwbedrijf heeft onze droomwoning neergezet. Van het eerste gesprek tot de oplevering verliep alles vlekkeloos. De communicatie was helder, de planning werd netjes aangehouden en het resultaat overtreft onze verwachtingen. Wij raden hen iedereen aan.">
+        <div class="proj__media">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80" alt="">
+        </div>
+        <div class="proj__meta">
+          <div>
+            <h4 class="proj__t">Nieuwbouw villa</h4>
+            <p class="proj__l">Heerenveen · 2025</p>
+          </div>
+          <span class="proj__arrow">→</span>
+        </div>
+      </a>
+
+      <a class="proj reveal" data-cat="aanbouw" href="#"
+         data-title="Moderne aanbouw"
+         data-location="Gorredijk · 2025"
+         data-type="Aanbouw"
+         data-desc="Deze uitbouw van 28 m² aan een jaren-70 woning in Gorredijk creëert een open leefruimte die naadloos aansluit op de bestaande keuken. De aanbouw is voorzien van een stalen constructie, grote schuifpui en een plat dak met sedumdek. De afwerking is volledig afgestemd op de bestaande woning."
+         data-reviewer="R. en M. Postma, Gorredijk"
+         data-review="We hadden al contact gehad met drie andere aannemers, maar bij Bever Bouwbedrijf klikte het meteen. Ze dachten actief mee over de indeling en kwamen met slimme oplossingen. Het resultaat is prachtig — precies zoals we het voor ogen hadden.">
+        <div class="proj__media">
+          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1200&q=80" alt="">
+        </div>
+        <div class="proj__meta">
+          <div>
+            <h4 class="proj__t">Moderne aanbouw</h4>
+            <p class="proj__l">Gorredijk · 2025</p>
+          </div>
+          <span class="proj__arrow">→</span>
+        </div>
+      </a>
+
+      <a class="proj reveal" data-cat="sanitair" href="#"
+         data-title="Badkamer renovatie"
+         data-location="Drachten · 2024"
+         data-type="Sanitair"
+         data-desc="Volledige renovatie van een verouderde badkamer naar een moderne, tijdloze natte cel. Het werk omvatte het vervangen van alle leidingwerk, een inloopdouche met regenkopdouche, zwevend toilet, dubbele wastafel met maatwerk meubel en grote keramische tegels in een visgraatpatroon. Opgeleverd in tien werkdagen."
+         data-reviewer="T. Hoekstra, Drachten"
+         data-review="Ik was sceptisch of het echt in tien dagen kon, maar het is gelukt — en beter dan ik had durven hopen. Nette vaklieden, elke dag een opgeruimde werkplek en een eindresultaat om trots op te zijn. De badkamer is nu het mooiste vertrek in huis.">
+        <div class="proj__media">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80" alt="">
+        </div>
+        <div class="proj__meta">
+          <div>
+            <h4 class="proj__t">Badkamer renovatie</h4>
+            <p class="proj__l">Drachten · 2024</p>
+          </div>
+          <span class="proj__arrow">→</span>
+        </div>
+      </a>
+
+      <a class="proj reveal" data-cat="renovatie" href="#"
+         data-title="Complete verbouwing"
+         data-location="Beetsterzwaag · 2024"
+         data-type="Renovatie"
+         data-desc="Integrale verbouwing van een jaren-30 herenhuis in Beetsterzwaag. De begane grond werd volledig gestript en heringedeeld: keuken, woonkamer en eetkamer zijn nu één grote open ruimte. Tegelijkertijd werden alle kozijnen vervangen, het dak gerenoveerd en de gevels opnieuw gevoegd. Looptijd: vier maanden."
+         data-reviewer="Familie Kuipers, Beetsterzwaag"
+         data-review="Een grote verbouwing is altijd spannend, maar Bever Bouwbedrijf zorgde voor rust en overzicht. Ze losten onverwachte tegenvallers op zonder drama en hielden ons altijd goed geïnformeerd. We zijn ontzettend blij met het eindresultaat.">
+        <div class="proj__media">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="">
+        </div>
+        <div class="proj__meta">
+          <div>
+            <h4 class="proj__t">Complete verbouwing</h4>
+            <p class="proj__l">Beetsterzwaag · 2024</p>
+          </div>
+          <span class="proj__arrow">→</span>
+        </div>
+      </a>
+
+      <a class="proj reveal" data-cat="renovatie" href="#"
+         data-title="Karakteristieke renovatie"
+         data-location="Leeuwarden · 2024"
+         data-type="Renovatie"
+         data-desc="Renovatie van een karakteristieke grachtenwoning in het centrum van Leeuwarden. Bijzonder aan dit project was het behoud van de originele details: de gietijzeren trapleuning, de paneeldeuren en de stucplafonds zijn zorgvuldig gerestaureerd. Tegelijkertijd werd de woning volledig geïsoleerd en voorzien van een nieuwe cv-installatie."
+         data-reviewer="S. van der Wal, Leeuwarden"
+         data-review="Wat Bever Bouwbedrijf onderscheidt is hun respect voor het karakter van een oud pand. Ze hebben niets gesloopt wat behouden kon blijven en hebben tegelijk een moderne woonkwaliteit gecreëerd. Prachtig vakwerk.">
+        <div class="proj__media">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80" alt="">
+        </div>
+        <div class="proj__meta">
+          <div>
+            <h4 class="proj__t">Karakteristieke renovatie</h4>
+            <p class="proj__l">Leeuwarden · 2024</p>
+          </div>
+          <span class="proj__arrow">→</span>
+        </div>
+      </a>
+
+      <a class="proj proj--wide reveal" data-cat="nieuwbouw" href="#"
+         data-title="Twee-onder-een-kap"
+         data-location="Sneek · 2023"
+         data-type="Nieuwbouw"
+         data-desc="Realisatie van twee spiegelbeeldige woningen onder één dak in Sneek. Beide woningen zijn 160 m² en gasloos uitgevoerd. Het project werd in opdracht van een particuliere opdrachtgever gerealiseerd als beleggingspand. Van vergunning tot oplevering begeleidde Bever Bouwbedrijf het hele traject."
+         data-reviewer="B. Dijkstra, Sneek"
+         data-review="Als belegger heb ik veel aannemers meegemaakt. Bever Bouwbedrijf spant de kroon: altijd bereikbaar, eerlijk over kosten en een oplevering die ik zonder opmerkingen heb kunnen ondertekenen. Ik werk graag opnieuw met ze samen.">
+        <div class="proj__media">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=80" alt="">
+        </div>
+        <div class="proj__meta">
+          <div>
+            <h4 class="proj__t">Twee-onder-een-kap</h4>
+            <p class="proj__l">Sneek · 2023</p>
+          </div>
+          <span class="proj__arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OVER ONS ============ -->
+<section class="about section section--alt" id="over" data-screen-label="Over ons">
+  <div class="container about__inner">
+    <div class="about__visual reveal">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80" alt="Bouwvakkers aan het werk op locatie">
+      <div class="about__badge">
+        <div class="about__badge-num count-up" data-count="25" data-suffix="+">0+</div>
+        <div class="about__badge-lbl">Jaar vakmanschap<br>in Friesland</div>
+      </div>
+    </div>
+
+    <div class="about__copy reveal">
+      <div class="eyebrow"><span class="eyebrow__line"></span>OVER BEVER BOUWBEDRIJF</div>
+      <h2 class="section__title">Vakmanschap waar u op kunt bouwen.</h2>
+      <p class="about__lead">
+        Bever Bouwbedrijf B.V. is een familiebedrijf met een sterke reputatie in
+        Noord-Nederland. Wij combineren ambachtelijk vakwerk met moderne bouwtechnieken
+        en denken graag met u mee.
+      </p>
+      <p class="about__body">
+        Geen onderaannemers die elkaar niet kennen, maar één betrokken team dat van
+        begin tot eind verantwoordelijkheid neemt. Korte lijnen, duidelijke afspraken,
+        en een resultaat waar wij — én u — trots op zijn.
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__num count-up" data-count="25" data-suffix="+">0+</div>
+          <div class="stat__lbl">Jaar ervaring</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num count-up" data-count="350" data-suffix="+">0+</div>
+          <div class="stat__lbl">Afgeronde projecten</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num count-up" data-count="98" data-suffix="%">0%</div>
+          <div class="stat__lbl">Klanttevredenheid</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num count-up" data-count="12" data-suffix="">0</div>
+          <div class="stat__lbl">Vaste vaklieden</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band" data-screen-label="CTA">
+  <div class="container cta-band__inner reveal">
+    <div>
+      <div class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>KLAAR OM TE BOUWEN?</div>
+      <h2 class="cta-band__title">
+        Klaar om uw bouwplannen<br>
+        te <span class="text-red">realiseren?</span>
+      </h2>
+      <p class="cta-band__sub">
+        Plan een vrijblijvend kennismakingsgesprek. Binnen 48 uur ontvangt u een
+        eerste reactie van ons team.
+      </p>
+    </div>
+    <div class="cta-band__actions">
+      <a href="#contact" class="btn btn--primary btn--lg">Vraag een offerte aan</a>
+      <a href="tel:0640757779" class="cta-band__phone">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/>
+        </svg>
+        <div>
+          <div class="cta-band__phone-lbl">Of bel direct</div>
+          <div class="cta-band__phone-num">06 40 75 77 79</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section" id="contact" data-screen-label="Contact">
+  <div class="container contact__inner">
+    <div class="contact__info reveal">
+      <div class="eyebrow"><span class="eyebrow__line"></span>CONTACT</div>
+      <h2 class="section__title">Laten we kennismaken.</h2>
+      <p class="contact__lead">
+        Bel, mail of stuur het formulier in. We nemen binnen één werkdag contact met
+        u op om uw plannen te bespreken.
+      </p>
+
+      <ul class="contact__list">
+        <li>
+          <div class="contact__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.72 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0122 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact__lbl">Telefoon</div>
+            <a class="contact__val" href="tel:0640757779">06 40 75 77 79</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <path d="M22 6l-10 7L2 6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact__lbl">E-mail</div>
+            <a class="contact__val" href="mailto:beverbouwbedrijf@gmail.com">beverbouwbedrijf@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact__lbl">Werkgebied</div>
+            <div class="contact__val">Friesland, Groningen &amp; Drenthe</div>
+          </div>
+        </li>
+        <li>
+          <div class="contact__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact__lbl">Openingstijden</div>
+            <div class="contact__val">Ma – Vr · 08:00 – 17:00</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact__form reveal" id="contactForm" novalidate>
+      <h3 class="contact__form-t">Offerte aanvragen</h3>
+      <p class="contact__form-s">Vul het formulier in — wij reageren binnen 24 uur.</p>
+
+      <div class="field">
+        <label for="f-name">Naam</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+        <span class="field__err">Vul uw naam in.</span>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-phone">Telefoon</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+          <span class="field__err">Vul uw telefoonnummer in.</span>
+        </div>
+        <div class="field">
+          <label for="f-email">E-mail</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+          <span class="field__err">Vul een geldig e-mailadres in.</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-service">Type project</label>
+        <select id="f-service" name="service">
+          <option value="">— Selecteer een dienst —</option>
+          <option>Nieuwbouw</option>
+          <option>Renovatie</option>
+          <option>Aanbouw</option>
+          <option>Opbouw</option>
+          <option>Sanitair</option>
+          <option>Totaal Afbouw</option>
+          <option>Anders / overleg</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="f-msg">Bericht</label>
+        <textarea id="f-msg" name="message" rows="5" required placeholder="Vertel kort over uw plannen…"></textarea>
+        <span class="field__err">Vul een bericht in.</span>
+      </div>
+
+      <button class="btn btn--primary btn--lg btn--block" type="submit">
+        <span class="btn__label">Offerte aanvragen</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </button>
+
+      <p class="contact__disclaimer">
+        Door dit formulier te versturen gaat u akkoord met onze
+        <a href="#">privacyverklaring</a>.
+      </p>
+
+      <div class="form__success" id="formSuccess" role="status" aria-live="polite">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        <div>
+          <strong>Bedankt voor uw bericht.</strong>
+          <span>We nemen binnen één werkdag contact met u op.</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="Bever Bouwbedrijf B.V." class="footer__logo">
+      <p class="footer__tag">
+        Uw betrouwbare partner voor nieuwbouw, renovatie en totaalafbouw in Noord-Nederland.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h5>Diensten</h5>
+      <ul>
+        <li><a href="#diensten">Nieuwbouw</a></li>
+        <li><a href="#diensten">Renovatie</a></li>
+        <li><a href="#diensten">Aanbouw</a></li>
+        <li><a href="#diensten">Opbouw</a></li>
+        <li><a href="#diensten">Sanitair</a></li>
+        <li><a href="#diensten">Totaal Afbouw</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h5>Bedrijf</h5>
+      <ul>
+        <li><a href="#werkwijze">Werkwijze</a></li>
+        <li><a href="#projecten">Projecten</a></li>
+        <li><a href="#over">Over ons</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:0640757779">06 40 75 77 79</a></li>
+        <li><a href="mailto:beverbouwbedrijf@gmail.com">beverbouwbedrijf@gmail.com</a></li>
+        <li>Friesland · Groningen · Drenthe</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <span>© 2026 Bever Bouwbedrijf B.V. — Alle rechten voorbehouden.</span>
+      <div class="footer__legal">
+        <a href="#">Privacyverklaring</a>
+        <a href="#">Algemene voorwaarden</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Sluiten">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 2l14 14M16 2L2 16"/></svg>
+    </button>
+    <div class="modal__img-wrap">
+      <img id="modalImg" src="" alt="" class="modal__img">
+      <span class="modal__type" id="modalType"></span>
+    </div>
+    <div class="modal__body">
+      <p class="modal__location" id="modalLocation"></p>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__desc" id="modalDesc"></p>
+      <div class="modal__review">
+        <div class="modal__review-stars">★★★★★</div>
+        <blockquote class="modal__review-text" id="modalReview"></blockquote>
+        <p class="modal__review-name" id="modalReviewer"></p>
+      </div>
+      <a href="#contact" class="btn btn--primary modal__cta" id="modalCta">Vrijblijvende offerte aanvragen</a>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
